@@ -1,0 +1,215 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 微软雅黑,Microsoft YaHei,Helvetica,Tahoma,StSun,宋体,SimSun,sans-serif !important;}
+body,html{width: 100%;height: 100%;background: black;}
+a{text-decoration: none;}
+li{list-style: none;}
+.clearfix::after {
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+}
+.bg{
+    height: 1080px;
+    width: 100%;
+}
+.bg .bg_1{
+    height: 100%;
+    width: 100%;
+    background: url(../img/bg.jpg) no-repeat top center;
+}
+.header{
+    height: 100%;
+}
+#header {
+    position: absolute;
+    top: 20px;
+    /* left: 20%; */
+    margin-top: 20px;
+    left: 50%;
+    margin-left: -600px;
+    box-shadow: 0 0 10px rgba(0,0,0,.7);
+}
+#header .navbar{
+    background: url(http://wow.nos.netease.com/1/images/landing-legion/bg_nav.jpg) top center no-repeat;
+    background-size: 100% 100%;
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    
+}
+#header .navbar li {
+    float: left;
+    list-style: none;
+    width: 160px;
+    line-height: 70px;
+    text-align: center;
+    border-left: 1px solid #3f2a22; 
+}
+#header .navbar li a{
+    text-decoration: none;
+    color: #f8b700;
+    font-size: 16px;
+    font-weight: 700;
+}
+#header .navbar li:first-child{
+    border: none;
+}
+#header .navbar .logo{
+    width: 230px;
+    height: 100%;
+    /* 不将height设为100%会出现边框溢出问题 */
+}
+#header .navbar li.logo img{
+    position: relative;
+    top:-40px;
+    left: -3px;
+}
+/* 四个动画 */
+.content{
+    position: absolute;
+    top:800px;
+    left:200px;
+}
+.content li{
+    background: #3f2a22;
+    width: 290px;
+    float: left;
+    height: 100px;
+    margin-right: 14px;
+    position: relative;
+}
+.content ul .fourbox{
+    float: left;
+    color: #f8b700;
+    font-weight: bold;
+
+}
+/* 底部信息 */
+#footer{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid #fff; */
+}
+#footer .fo_he{
+    margin-bottom: 5px;
+}
+#footer .business{
+    float: left;
+    padding-top: 48px;
+
+}
+#footer .business span{
+    display: inline-block;
+    padding-left:20px; 
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+}
+#footer .business .icon{
+    background:url(../img/icon.png) no-repeat 0 0;
+    background-position: -5px -6.5px;
+    vertical-align: middle;
+}
+#footer .business .icon_1{
+    background:url(../img/icon.png) no-repeat 0 0;
+    background-position: -5px -6.5px;
+}
+#footer .business .icon_2{
+    background:url(../img/icon.png) no-repeat 0 0;
+    background-position: -35px -6.5px;
+}
+#footer .business .icon_3{
+    background:url(../img/icon.png) no-repeat 0 0;
+    background-position: -65px -6.5px;
+}
+#footer .business a{
+    color: #fff;
+    font-size: 14px;
+}
+#footer .pinpai{
+    color: #fff;
+    font-size: 14px;
+    text-align: right;
+    padding-top: 36px;
+}
+#footer .pinpai a{
+    display: inline-block;
+    background: url(../img/pinpai.png) no-repeat 0 0;
+    background-position: -350px 11px;
+    width: 100px;
+    height: 30px;
+}
+#footer .guize{
+    /* overflow: hidden; */
+    padding-bottom: 3.3px;
+    /* border: 1px solid #fff; */
+    border-bottom: 1px solid #282d32;
+}
+#footer .guize .baoxue{
+    display: inline-block;
+    background: url(../img/partner1.png) no-repeat 0 0;
+    width: 140px;
+    height: 80px;
+    overflow: hidden;
+    /* vertical-align: top; */
+    position: relative;
+    left:20px;
+    
+}
+#footer .guize .wangyi{
+    display: inline-block;
+    background: url(../img/partner2.png) no-repeat 0 0;
+    width: 125px;
+    height: 38px;
+    position: relative;
+    top:-5px;
+    left:20px;
+}
+#footer .guize .info{
+    float: right;
+    color: #ccc;
+    font-size:12px;
+    text-align: left;
+    width: 706px;
+    padding: 0 0 0 73px;
+    vertical-align: middle;
+    position: relative;
+    top:-11px;
+}
+#footer .guize .info ul{
+    margin: 0 0 0 -12px;
+    padding: 0 0 5px;
+    overflow: hidden;
+}
+#footer .guize .info li{
+    float: left;
+    /* line-height: 35px; */
+    /* width: 60px; */
+    /* text-align: center; */
+}
+#footer .guize .info li a{
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+}
+#footer .guize .info p{
+    line-height: 20px;
+    color:rgba(255,255,255,.3);
+}
+#footer .guize .remind{
+    margin-top: 10px;
+}
+#footer .guize .remind span{
+    line-height: 20px;
+    color:rgba(255,255,255,.3);
+}
+#footer .tips{
+    line-height: 20px;
+    color:rgba(255,255,255,.3);
+    font-size: 12px;
+    /* margin:0 auto; */
+    text-align: center;
+    padding: 20px 0 10px 0px ;
+}
